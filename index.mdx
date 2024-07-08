@@ -1,0 +1,124 @@
+---
+title: Open Source Projects
+---
+
+import {
+  LandingContainer,
+  Button,
+  Box,
+  FlexSection,
+  Flex,
+  Jumbotron,
+  ThinTile,
+  WideTile,
+  Emphasis,
+  H1,
+  H2,
+  SectionHeader,
+  NavBar,
+} from '@redocly/developer-portal/ui';
+import { Header1, Header2, TileText } from "./components";
+
+import heroImage from './images/heroimg.png';
+import bookManagementIcon from './images/book-management.svg';
+
+export default LandingContainer;
+
+<Jumbotron 
+  pb="8.5em"
+  bgImage={heroImage}
+  height="350px"
+  width="3440px"
+  bgColor="white"
+  textColor="black"
+>
+
+  <NavBar location={props.location} standalone={false} />
+  <Header1>Open Source Projects</Header1>
+  <Header2>Explore open source projects currently in development.</Header2>
+</Jumbotron>
+
+<Box p={{ _: "8px", sm: "12px", md: "16px", lg: "24px" }}>
+  <FlexSection justifyContent="space-around" flexWrap="wrap">
+    <WideTile 
+      style={{ height: "284px"}}
+      to="docs/axelar/intro-to-axelar.md"
+      header="Axelar Network"
+      color="#141A1F"
+      textAlign="left"
+      disableArrow
+    >
+      <TileText>
+        The Axelar Network is a Web3 interoperability platform.
+        Dapps built on the XRP Ledger can access other
+        blockchains, using Axelar's bridging solutions.
+      </TileText>
+      <div style={{ bottom: "36px", position: "absolute"}}>
+        <Button  style={{
+            padding: "8px 16px",
+            borderRadius: "20px",
+            fontSize: "14px",
+            lineHeight: "20px",
+            color: "#FFFFFF",
+            background: "#005BCC",
+          }}>
+          Go to Docs
+        </Button>
+      </div>
+    </WideTile>
+    <WideTile 
+      style={{ height: "284px"}}
+      to="docs/evm-sidechain/intro-to-evm-sidechain.md"
+      header="XRPL EVM Sidechain"
+      color="#141A1F"
+      textAlign="left"
+      disableArrow
+    >
+      <TileText>
+        The XRPL Ethereum Virtual Machine (EVM) 
+        compatible XRP Ledger sidechain is a secure and 
+        fast public blockchain that brings all kinds 
+        of web3 applications to the XRP Ledger community.
+      </TileText>
+      <div style={{ bottom: "36px", position: "absolute"}}>
+        <Button  style={{
+            padding: "8px 16px",
+            borderRadius: "20px",
+            fontSize: "14px",
+            lineHeight: "20px",
+            color: "#FFFFFF",
+            background: "#005BCC",
+          }}>
+          Go to Docs
+        </Button>
+      </div>
+    </WideTile>
+    <WideTile 
+      style={{ height: "284px"}}
+      to="docs/xls-47d-price-oracles/price-oracles.md"
+      header="Price Oracles"
+      color="#141A1F"
+      textAlign="left"
+      disableArrow
+    >
+      <TileText>
+        Price Oracles enable the XRP Ledger to natively
+        gather real-world data and store it on-chain,
+        enabling dApps and native DeFi protocols to 
+        access standardized pricing feeds.
+      </TileText>
+      <div style={{ bottom: "36px", position: "absolute"}}>
+        <Button  style={{
+            padding: "8px 16px",
+            borderRadius: "20px",
+            fontSize: "14px",
+            lineHeight: "20px",
+            color: "#FFFFFF",
+            background: "#005BCC",
+          }}>
+          Go to Docs
+        </Button>
+      </div>
+    </WideTile>
+  </FlexSection>
+</Box>
