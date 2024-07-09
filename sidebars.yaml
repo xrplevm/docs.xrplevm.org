@@ -1,5 +1,5 @@
 - group: Cross-Chain DApps
-  page: docs/cross-chain-dapps/cross-chain-dapps.md
+  page: index.md
   expanded: false
   pages:
     - page: docs/cross-chain-dapps/cross-chain-faqs.md          
