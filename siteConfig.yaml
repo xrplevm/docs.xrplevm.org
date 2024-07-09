@@ -1,8 +1,8 @@
 meta:
-  title: Open Source @ Ripple
-  description: Open source projects and prerelease documentation being developed by Ripple engineers.
-  siteUrl: https://opensource.ripple.com
-  keywords: xrpl docs, prerelease docs, beta api reference docs
+  title: XRPL EVM Documentation
+  description: Documentation for connecting and developing apps on the XRPL EVM sidechain.
+  siteUrl: https://docs.xrplevm.org
+  keywords: xrpl evm docs, reference docs
   lang: en-US
 disableImagesOptimization: true
 linkChecker:
@@ -11,11 +11,11 @@ linkChecker:
     CheckExternal: false
 logo:
   image: ./images/ripple-open-source-logo.svg
-  altText: Open Source at Ripple Documentation
+  altText: XRPL EVM Documentation
 toc:
   enable: true
 editPage:
-  baseUrl: https://github.com/ripple/opensource.ripple.com/tree/main/
+  baseUrl: https://github.com/ripple/docs.xrplevm.org/tree/main/
   icon: ./images/pen-to-square-solid.svg
 copyCodeSnippet:
   enable: true
@@ -36,12 +36,6 @@ analytics:
       head: true
 #scripts:
 #  - ./static/intercom.js
-nav:
-  - label: Home
-    page: index.mdx  
-  - label: Open Source Projects
-    page: docs/index.md    
-  - search: true
 
 showNextButton: false
 
