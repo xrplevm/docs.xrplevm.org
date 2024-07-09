@@ -1,6 +1,6 @@
 # Open Source Projects
 
-The [Open Source Projects site](https://opensource.ripple.com) provides information on open source projects that Ripple engineers are working on, including in-progress documentation for features that are in development.
+The [XRPL EVM documentation site](https://docs.xrplevm.org) provides information on the XRPL EVM-compatible sidechain, including in-progress documentation for features that are in development.
 
 ## License
 
