@@ -20,7 +20,14 @@
     - group: Run a Validator
       expanded: false
       pages:
-        - page: docs/evm-sidechain/join-evm-sidechain-devnet.md 
+        - page: docs/evm-sidechain/join-evm-sidechain-devnet.md
+        - page: docs/evm-sidechain/run-and-synchronize-your-node.md
+        - group: Chain upgrades
+          expanded: false
+          pages:
+          - page: docs/evm-sidechain/introduction-to-chain-upgrades.md
+          - page: docs/evm-sidechain/install-cosmovisor.md
+        - page: docs/evm-sidechain/join-the-proof-of-authority.md
         - page: docs/evm-sidechain/manage-the-validator-node.md
         - page: docs/evm-sidechain/evm-sidechain-validator-security.md
     - group: Bridges
