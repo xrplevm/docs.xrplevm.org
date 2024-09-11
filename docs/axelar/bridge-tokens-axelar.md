@@ -17,7 +17,7 @@ This tutorial describes how to transfer tokens between Ethereum `Sepolia` and th
 
 ## Bridge ETH
 
-![Bridge ETH](../../images/axelar-bridge-weth.png)
+![Bridge ETH](../img/axelar-bridge-weth.png)
 
 ### ETH from Ethereum to XRPL
 
@@ -113,7 +113,7 @@ This tutorial describes how to transfer tokens between Ethereum `Sepolia` and th
 
 ## Bridge XRP
 
-![Bridge ETH](../../images/axelar-bridge-xrp.png)
+![Bridge ETH](../img/axelar-bridge-xrp.png)
 
 ### XRP from XRPL to Ethereum
 
