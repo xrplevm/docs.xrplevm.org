@@ -53,7 +53,7 @@ The Axelar network is enabled by four smart contracts:
 
 ## Cross-chain Flows
 
-![Cross-chain Bridging](../../images/axelar-bridging.png)
+![Cross-chain Bridging](../img/axelar-bridging.png)
 
 ### Payments from XRPL to another blockchain
 
@@ -96,15 +96,15 @@ Tickets are used to enable multiple in-flight transactions and improve throughpu
 
 A set of XRPL multisig tickets are always available: these tickets have been created with `TicketCreate`, but are not confirmed to have been consumed by transactions on the XRPL. If the number of available tickets falls below a configurable threshold, a new `TicketCreate` transaction is constructed and broadcasted. New transactions are assigned available tickets until they are all exhausted.
 
-![Ticketing Logic 1](../../images/axelar-ticket-1.png)
+![Ticketing Logic 1](../img/axelar-ticket-1.png)
 
 At this point, ticket assignment will wrap around to the first available tickets (similar to “round robin” load-balancing algorithms), leading to multiple tickets being assigned to the same transaction.
 
-![Ticketing Logic 2](../../images/axelar-ticket-2.png)
+![Ticketing Logic 2](../img/axelar-ticket-2.png)
 
 Only one of the transactions with the same ticket number will ultimately be included in the ledger, in which case the ticket is assigned to that transaction forever.
 
-![Ticketing Logic 3](../../images/axelar-ticket-3.png)
+![Ticketing Logic 3](../img/axelar-ticket-3.png)
 
 
 ## SignerListSet Flow
