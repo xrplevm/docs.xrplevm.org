@@ -26,4 +26,10 @@ The Axelar GMP protocol operates as follows:
 ## Key Components
 
 
+- **Axelar Multisig Account**: The Axelar Multisig account is the account that is responsible for submitting the message to the Axelar network (from XRPL Ledger).
+- **Axelar Amplifier Gateway**: The Axelar Amplifier Gateway is the smart contract which communicates with the Axelar network, enabling the message passing functionality.
+- **XRPL EVM Sidechain**: The XRPL EVM Sidechain is the destination for the message, which corresponds to the XRPL EVM Sidechain.
+- **XRPL Ledger**: The XRPL Ledger is the source of the message, which corresponds to the XRPL Ledger.
+
+## Example
 
