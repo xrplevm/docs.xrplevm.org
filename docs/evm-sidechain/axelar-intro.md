@@ -28,3 +28,4 @@ For further details on the implementation of the Axelar bridge on the XRPL EVM s
 - [Axelar Architecture](axelar-architecture.md): Learn more about the architecture of the Axelar bridge.
 - [Axelar Interchain Transfer](axelar-interchain-transfer.md): Learn more about Axelar interchain transfer.
 - [Axelar General Message Passing (GMP)](axelar-general-message-passing.md): Learn more about Axelar general message passing.
+- [Deployed Contracts](axelar-deployed-contracts.md): List of deployed contracts on the XRPL EVM Sidechain networks.

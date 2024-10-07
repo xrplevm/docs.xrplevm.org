@@ -33,3 +33,48 @@ The Axelar GMP protocol operates as follows:
 
 ## Example
 
+The following example demonstrates how to complete a general message passing transaction on the XRPL EVM Sidechain from the XRPL Ledger to a smart contract on the EVM Sidechain.
+
+
+1. Compute the payload that you want to call on XRPL EVM Sidechain `AxelarExecutable` smart contract's `_execute` function with.
+2. Create an XRPL `Payment` transaction with the following fields:
+```json
+{
+    TransactionType: "Payment",
+    Account: "YOUR_XRPL_ADDRESS",
+    Amount: "1000000", // = 1 XRP - the amount of XRP you want to bridge, in drops
+    Destination: "rP9iHnCmJcVPtzCwYJjU1fryC2pEcVqDHv", // Axelar Multisig address on XRPL
+    Memos: [
+        {
+            // Destination address on XRPL EVM Sidechain
+            Memo: {
+                MemoData: "YOUR_SC_DESTINATION_ADDRESS", // your ETH recipient address, without the 0x prefix
+                MemoType: "64657374696E6174696F6E5F61646472657373", // hex("destination_address")
+            },
+        },
+        {
+            Memo: {
+                MemoData: "7872706C2D65766D2D73696465636861696E", // hex("xrpl-evm-sidechain")
+                MemoType: "64657374696E6174696F6E5F636861696E", // hex("destination_chain")
+            },
+        },
+        {
+            Memo: {
+                MemoData: "YOUR_PAYLOAD_HASH",  // The hash of the payload you want to call on XRPL EVM Sidechain
+                MemoType: "7061796C6F61645F68617368", // hex("payload_hash")
+            },
+        },
+    ],
+    ...
+}
+```
+
+3. Submit the transaction to the XRPL Ledger. Within a few minutes, the relayer should submit validator signatures of the XRPL Testnet deposit transaction to the XRPL EVM Sidechain `AxelarAmplifierGateway` contract, which records the approval of the payload hash and emits a `ContractCallApproved` event. 
+4. Once the transaction is confirmed, call the `execute` function on the XRPL EVM Sidechain `AxelarExecutable` smart contract.
+```
+AXELAR_EXECUTABLE= # your `AxelarExecutable` contract
+COMMAND_ID= # the `commandId` that was emitted in the `ContractCallApproved` event
+SOURCE_ADDRESS= # the XRPL address that performed the `Payment` deposit transaction
+PAYLOAD= # abi.encode(['string', 'uint256', 'bytes'], [symbol, amount, gmpPayload])
+cast send $AXELAR_EXECUTABLE 'function execute(bytes32 commandId, string calldata sourceChain, string calldata sourceAddress, bytes calldata payload)' $COMMAND_ID xrpl $SOURCE_ADDRESS $PAYLOAD --private-key $PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL
+```

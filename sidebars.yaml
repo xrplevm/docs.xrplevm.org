@@ -29,7 +29,17 @@
       pages:
         - page: docs/evm-sidechain/axelar-architecture.md
         - page: docs/evm-sidechain/axelar-general-message-passing.md
-        - page: docs/evm-sidechain/axelar-interchain-transfer.md
+        - group: Axelar Interchain Transfer
+          page: docs/evm-sidechain/axelar-interchain-transfer.md
+          expanded: false
+          pages:
+            - page: docs/evm-sidechain/axelar-interchain-evm-sidechain-avalanche.md
+            - page: docs/evm-sidechain/axelar-interchain-evm-sidechain-xrpl.md
+        - group: Deployed contracts
+          page: docs/evm-sidechain/axelar-deployed-contracts.md
+          expanded: false
+          pages:
+            - page: docs/evm-sidechain/axelar-deployed-contracts-devnet.md
     - group: XRPL EVM CLI
       page: docs/evm-sidechain/evm-cli.md
       expanded: false
