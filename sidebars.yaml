@@ -56,11 +56,5 @@
           pages:
             - page: docs/evm-sidechain/set-up-an-evm-sidechain.md
             - page: docs/evm-sidechain/stress-test-the-evm-sidechain.md
-        - group: Bridge Commands
-          expanded: false
-          pages:
-            - page: docs/evm-sidechain/create-a-bridge.md
-            - page: docs/evm-sidechain/execute-bridge-operations.md
-            - page: docs/evm-sidechain/stress-test-the-bridge.md
         - page: docs/evm-sidechain/bootstrap-a-local-environment.md
     - page: docs/evm-sidechain/xrpl-evm-sidechain-faq.md
