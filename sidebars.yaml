@@ -27,7 +27,7 @@
       page: docs/evm-sidechain/bridges-intro.md
       expanded: false
       pages:
-        - page: docs/evm-sidechain/axelar-architecture.md
+        - page: docs/evm-sidechain/axelar-overview.md
         - page: docs/evm-sidechain/axelar-general-message-passing.md
         - group: Axelar Interchain Transfer
           page: docs/evm-sidechain/axelar-interchain-transfer.md
