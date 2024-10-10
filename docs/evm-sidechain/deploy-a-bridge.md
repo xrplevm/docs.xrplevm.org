@@ -28,11 +28,11 @@ Before deploying a bridge, you have to create a Gnosis Safe. The safe is the mul
 
 1. Connect a wallet to the [Gnosis Safe management platform](https://safe-evm-poa-sidechain.peersyst.tech/).
 
-![Connect a Wallet](../../images/evm-connect-wallet.png "Connect a Wallet")
+![Connect a Wallet](../img/evm-connect-wallet.png "Connect a Wallet")
 
 2. Click **+ Create New Safe**.
 
-![Create New Safe](../../images/evm-create-safe.png "Create New Safe")
+![Create New Safe](../img/evm-create-safe.png "Create New Safe")
 
 - Give the safe a name to identify it locally.
 - The owners are the bridge witnesses.
@@ -40,11 +40,11 @@ Before deploying a bridge, you have to create a Gnosis Safe. The safe is the mul
 
 Before submitting, check your information on the review screen.
 
-![Review Safe Info](../../images/evm-safe-owners.png "Review Safe Info")
+![Review Safe Info](../img/evm-safe-owners.png "Review Safe Info")
 
 A prompt will appear, asking to sign the transaction. Carefully review the transaction details before signing it. Once the transaction is submitted, you'll see a success screen.
 
-![Safe Created](../../images/evm-safe-created.png "Safe Created")
+![Safe Created](../img/evm-safe-created.png "Safe Created")
 
 
 ## Deploy the Bridge Doors
@@ -157,7 +157,7 @@ Enable the safe module to authorize the bridge door to execute transactions. You
 
 1. Click **Use Transaction Builder**.
 
-    ![Use Transaction Builder](../../images/evm-use-transaction-builder.png "Use Transaction Builder")
+    ![Use Transaction Builder](../img/evm-use-transaction-builder.png "Use Transaction Builder")
 
 2. Enter these fields:
     - **Enter Address or ENS Name:** The address of the safe you created.
@@ -184,7 +184,7 @@ Enable the safe module to authorize the bridge door to execute transactions. You
 3. Click **Add Transaction** to add it to the batch.
 
     
-    ![Create Batch](../../images/evm-batch.png "Create Batch")
+    ![Create Batch](../img/evm-batch.png "Create Batch")
 
 4. Click **Create Batch**.
 
@@ -192,14 +192,14 @@ Enable the safe module to authorize the bridge door to execute transactions. You
 
 6. If the threshold of the safe is one, you can click **Submit**. Otherwise, the other owners of the safe need to review and sign the transaction before you can submit it to the network.
 
-    ![Submit Transaction](../../images/evm-submit-transaction.png "Submit Transaction")
+    ![Submit Transaction](../img/evm-submit-transaction.png "Submit Transaction")
 
     You can check on the status of signatures from the **Transactions** tab.
 
-    ![Review Transaction Signatures](../../images/evm-review-transaction-signatures.png "Review Transaction Signatures")
+    ![Review Transaction Signatures](../img/evm-review-transaction-signatures.png "Review Transaction Signatures")
 
 7. Check the module is enabled from **Settings** > **Modules**.
 
-    ![Check Modules](../../images/evm-check-modules.png "Check Modules")
+    ![Check Modules](../img/evm-check-modules.png "Check Modules")
 
     After the module is enabled, witnesses can send attestations and the bridge can begin operating.

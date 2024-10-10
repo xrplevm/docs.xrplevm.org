@@ -1,0 +1,6 @@
+##### Devnet
+
+| Upgrade Name | Block Height | Upgrade Date       | Binary Version                                                              | Docker image                                                                                                                                                                                          |
+|--------------|--------------|--------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Genesis      | 0            | Initial Deployment | [v1.0.0-beta.0](https://github.com/xrplevm/node/releases/tag/v1.0.0-beta.0) | [peersyst/xrp-evm-blockchain:latest](https://hub.docker.com/layers/peersyst/xrp-evm-blockchain/latest/images/sha256-de9941203bb9f199e6125e3518d9c56a8106c93211cd2840cb9b0fc7652f5416?context=explore) |
+| v2           | 8912879      | 2024-06-05         | [v2.0.0](https://github.com/xrplevm/node/releases/tag/v2.0.0)               | [peersyst/exrp:v2.0.0](https://hub.docker.com/layers/peersyst/exrp/v2.0.0/images/sha256-0e7c502211696f6dae0dc2ce8ae16429bd4ee09941b00cf95e63dfad86d10407?context=explore)                             |
