@@ -11,11 +11,9 @@ status: not_enabled
 
 Axelar General Message Passing (GMP) is a cross-chain communication protocol that allows arbitrary data and function calls to be transmitted securely across different blockchain networks. Through GMP, smart contract execution on one chain can be triggered from another, enabling interoperability beyond simple token transfers.
 
-For the XRPL Ledger, this integration unlocks smart contract functionality by bridging it to the XRPL EVM Sidechain. Specifically, when a transaction on XRPL needs to initiate a smart contract on the EVM Sidechain, Axelar acts as the relay layer, verifying the message, ensuring consensus, and executing the command on the EVM side. This seamless interaction empowers XRPL with access to EVM-compatible DeFi protocols, automated workflows, and complex dApps, expanding its utility and ecosystem capabilities.
+For the XRPL Ledger, this integration unlocks smart contract functionality by bridging it to the XRPL EVM Sidechain. Specifically, when a transaction on XRPL needs to initiate a smart contract on the EVM Sidechain, Axelar acts as the relay layer, verifying the message, ensuring consensus, and executing the command on the EVM side. This seamless interaction empowers the XRPL with access to EVM-compatible DeFi protocols, automated workflows, and complex dApps.
 
 ## How It Works
-
-The Axelar GMP protocol operates as follows:
 
 ![xrpl-evm-sidechain-axelar-gmp](../img/evm-sidechain-axelar-gmp.png)
 
@@ -26,17 +24,16 @@ The Axelar GMP protocol operates as follows:
 ## Key Components
 
 
-- **Axelar Multisig Account**: The Axelar Multisig account is the account that is responsible for submitting the message to the Axelar network (from XRPL Ledger).
+- **Axelar Multisig Account**: The Axelar Multisig account is the account that is responsible for submitting the message to the Axelar network (from XRP Ledger).
 - **Axelar Amplifier Gateway**: The Axelar Amplifier Gateway is the smart contract which communicates with the Axelar network, enabling the message passing functionality.
-- **XRPL EVM Sidechain**: The XRPL EVM Sidechain is the destination for the message, which corresponds to the XRPL EVM Sidechain.
-- **XRPL Ledger**: The XRPL Ledger is the source of the message, which corresponds to the XRPL Ledger.
+- **XRPL EVM Sidechain**: The XRPL EVM Sidechain is the destination for the message.
+- **XRPL Ledger**: The XRP Ledger is the source of the message.
 
 ## Example
 
-The following example demonstrates how to complete a general message passing transaction on the XRPL EVM Sidechain from the XRPL Ledger to a smart contract on the EVM Sidechain.
+The following example demonstrates how to complete a general message passing transaction from the XRP Ledger to a smart contract on the EVM Sidechain.
 
-
-1. Compute the payload that you want to call on XRPL EVM Sidechain `AxelarExecutable` smart contract's `_execute` function with.
+1. Compute the payload that you want to call on XRPL EVM Sidechain `AxelarExecutable` smart contract's `_execute` function.
 2. Create an XRPL `Payment` transaction with the following fields:
 ```json
 {

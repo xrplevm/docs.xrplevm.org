@@ -31,7 +31,6 @@
         - page: docs/evm-sidechain/manage-the-validator-node.md
         - page: docs/evm-sidechain/evm-sidechain-validator-security.md
     - group: Axelar 
-      page: docs/evm-sidechain/bridges-intro.md
       expanded: false
       pages:
         - page: docs/evm-sidechain/axelar-overview.md
@@ -42,6 +41,12 @@
           pages:
             - page: docs/evm-sidechain/axelar-interchain-evm-sidechain-avalanche.md
             - page: docs/evm-sidechain/axelar-interchain-evm-sidechain-xrpl.md
+        - group: Relaying messages manually
+          page: docs/evm-sidechain/axelar-manually-relay-messages.md
+          expanded: false
+          pages:
+            - page: docs/evm-sidechain/axelar-relay-transfer-xrpl-to-xrpl-evm-sidechain.md
+            - page: docs/evm-sidechain/axelar-relay-transfer-xrpl-evm-sidechain-to-xrpl.md
         - group: Deployed contracts
           page: docs/evm-sidechain/axelar-deployed-contracts.md
           expanded: false

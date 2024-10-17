@@ -9,13 +9,13 @@ status: not_enabled
 
 ## Feature Overview
 
-The main functionalities of ITS (Interchain Token Service) can be broken down into smaller components. For further reading on the design of ITS, see the [Interchain Tokens and Interchain Token Service](https://docs.axelar.dev/dev/send-tokens/interchain-tokens/intro/) These are the ability to connect tokens across multiple blockchains and transfer connected tokens between multiple blockchains. Note: ITS is designed to be a flexible permisionless process, meaning that the way tokens are connected between the chains can vary for different usecases (see token managers for more info).
+Axelar's Interchain Token Service (ITS) connects tokens across multiple blockchains, enabling token transfers between blockchains. ITS is designed to be a flexible, permisionless process, meaning that the way tokens are connected between chains can vary for different use cases. For further reading on the design, see: [Interchain Tokens and Interchain Token Service](https://docs.axelar.dev/dev/send-tokens/interchain-tokens/intro/).
 
 ## How It Works
 
 Interchain transfers are executed through Axelar Interchain Token Service (ITS). ITS is a set of smart contracts deployed on the XRPL EVM Sidechain that are responsible for the interchain token transfer functionality. 
 
-The following diagram shows the process of transferring a token from XRPL Ledger to the XRPL EVM Sidechain.
+The following diagram shows the process of transferring a token from the XRPL to the XRPL EVM Sidechain.
 
 ![xrpl-evm-sidechain-axelar-its-transfer](../img/evm-sidechain-axelar-its-transfer.png)
 
@@ -31,8 +31,8 @@ The following diagram shows the process of transferring a token from XRPL Ledger
 - **Axelar Multisig Account**: The Axelar Multisig account is the account that is responsible for submitting the message to the Axelar network (from XRPL Ledger).
 - **Axelar Amplifier Gateway**: The Axelar Amplifier Gateway is the smart contract which communicates with the Axelar network, enabling the message passing functionality.
 - **ITS contracts**: The ITS contracts are the smart contracts which are responsible for the interchain token transfer functionality. You can find the ITS contracts on the [Axelar Developer Hub](https://docs.axelar.dev/dev/send-tokens/interchain-tokens/intro/).
-- **XRPL EVM Sidechain**: The XRPL EVM Sidechain is the destination for the message, which corresponds to the XRPL EVM Sidechain.
-- **XRPL Ledger**: The XRPL Ledger is the source of the message, which corresponds to the XRPL Ledger.
+- **XRPL EVM Sidechain**: The XRPL EVM Sidechain is the destination for the message.
+- **XRPL Ledger**: The XRPL Ledger is the source of the message.
 
 ## Examples
 

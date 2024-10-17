@@ -47,7 +47,7 @@ This option generates a new wallet using the faucet and directly connects it to 
 **Connect MetaMask Wallet**
 
 Use your MetaMask wallet to interact with the XRPL EVM Sidechain. 
-Ensure that you have created a MetaMask account and connected to the public XRP Ledger Devnet as described in [Connect MetaMask to XRP EVM Sidechain](connect-metamask-to-xrpl-evm-sidechain.md).
+Ensure that you have created a MetaMask account and connected to the public XRP Ledger Devnet as described in [Connect MetaMask to XRPL EVM Sidechain](connect-metamask-to-xrpl-evm-sidechain.md).
 
 To connect a MetaMask wallet to the bridge, go to the [XRPL EVM sidechain bridge](https://bridge.devnet.xrpl.org/) and click **Connect Metamask Wallet**.
 
