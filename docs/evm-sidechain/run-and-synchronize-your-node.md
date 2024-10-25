@@ -27,11 +27,11 @@ Synchronization from genesis involves starting your node from the very first blo
 
 To keep your node up-to-date, you need to update the binaries whenever a hard fork occurs. Below is a table indicating all the hard forks for each network:
 
-<embed src="/snippets/_evm-sidechain-upgrades-table.md" />
+{% partial file="/snippets/_evm-sidechain-upgrades-table.md" /%}
 
 #### Steps to Sync from Genesis
 
-1. Ensure your node is initialized and configured as per the [Installation Guide](install-evm-sidechain-devnet.html).
+1. Ensure your node is initialized and configured as per the [Installation Guide](join-evm-sidechain-devnet.md#installation-methods).
 2. Start the node with the initial binary version:
     ```bash
     exrpd start

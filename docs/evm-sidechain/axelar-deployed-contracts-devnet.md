@@ -7,7 +7,7 @@ status: not_enabled
 ---
 # Devnet 
 
-<embed src="/snippets/_axelar-contracts-disclaimer.md" />
+{% partial file="/snippets/_axelar-contracts-disclaimer.md" /%}
 <!-- Add devnet list contract disclaimer here -->
 
 ## Contracts

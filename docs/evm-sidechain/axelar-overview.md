@@ -6,7 +6,7 @@ labels:
 status: not_enabled
 ---
 
-<embed src="/snippets/_axelar-overview-disclaimer.md" />
+{% partial file="/snippets/_axelar-overview-disclaimer.md" /%}
 
 # Overview 
 
