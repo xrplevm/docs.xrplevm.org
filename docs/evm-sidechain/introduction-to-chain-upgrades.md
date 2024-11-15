@@ -20,7 +20,7 @@ Blockchain upgrades are a complex process that requires all network participants
 ## List of upgrades
 Below is a table indicating all the hard fork upgrades for each network:
 
-<embed src="/snippets/_evm-sidechain-upgrades-table.md" />
+{% partial file="/snippets/_evm-sidechain-upgrades-table.md" /%}
 
 ## Automated upgrades
 

@@ -7,7 +7,7 @@ status: not_enabled
 ---
 # Relay messages manually
 
-<embed src="/snippets/_axelar-relaying-disclaimer.md" />
+{% partial file="/snippets/_axelar-relaying-disclaimer.md" /%}
 
 When transferring tokens or messages through Axelar Amplifier Gateway from XRPL or XRPL EVM Sidechain, a relaying process is required to trigger the source gateway on Axelar Amplifier from the source chain. 
 

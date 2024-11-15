@@ -8,7 +8,7 @@ status: not_enabled
 ---
 # Join the XRPL EVM Sidechain Devnet
 
-<embed src="/snippets/_evm-sidechain-disclaimer.md" />
+{% partial file="/snippets/_evm-sidechain-disclaimer.md" /%}
 
 This tutorial walks you through the steps to join the existing **XRPL EVM Sidechain Devnet**. 
 
@@ -88,7 +88,7 @@ A containerized approach that ensures the node runs in a consistent environment.
 
 A more advanced method using Cosmovisor, which automates the process of binary management and upgrades.
 
-For detailed steps, refer to [Using Cosmovisor for automated upgrades](automate-upgrades-using-comsovisor.html).
+For detailed steps, refer to [Using Cosmovisor for automated upgrades](install-cosmovisor.md).
 
 
 ## Initialize Node
@@ -131,11 +131,12 @@ All these commands create your `~/.exrpd` (i.e `$HOME`) directory with subfol
     wget https://raw.githubusercontent.com/Peersyst/xrp-evm-archive/main/poa-devnet/genesis.json -O ~/.exrpd/config/genesis.json
     ```
 
-   :::attention Attention
+   {% admonition type="info" name="Attention" %}
 
    Before jumping to the next item, make sure that the contents of the file `~/.exrpd/config/genesis.json` match the contents of the file [genesis.json](https://raw.githubusercontent.com/Peersyst/xrp-evm-archive/main/poa-devnet/genesis.json).
 
-   :::
+   
+    {% /admonition %}
 
    Verify the genesis configuration file:
 
