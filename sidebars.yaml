@@ -3,12 +3,6 @@
   expanded: false
   items:
     - page: docs/cross-chain-dapps/cross-chain-faqs.md
-    - group: Axelar Bridge
-      page: docs/axelar/intro-to-axelar.md
-      expanded: false
-      items:
-        - page: docs/axelar/bridge-tokens-axelar.md
-        - page: docs/axelar/call-a-smart-contract-function.md
     - label: Cross-Chain Bridges
       href: https://xrpl.org/docs/concepts/xrpl-sidechains/cross-chain-bridges/
 - group: XRPL EVM Sidechain
