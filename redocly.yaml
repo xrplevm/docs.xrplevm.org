@@ -6,10 +6,19 @@ ignore:
   - _*
 links:
   - rel: stylesheet
-    href: ./static/style.css
-  - rel: stylesheet
-    href: ./static/fonts.css
-navbar: {}
+    href: ./@theme/fonts.css
+navbar:
+  items:
+    - label: Users
+      page: pages/users/index.md
+    - label: Developers
+      page: pages/developers/index.md
+    - label: Operators
+      page: pages/operators/index.md
+    - label: Bridge
+      page: pages/bridge/index.md
+    - label: Core
+      page: pages/core/index.md
 footer:
   items:
     - group: About
@@ -46,7 +55,7 @@ markdown:
     baseUrl: https://github.com/ripple/docs.xrplevm.org/tree/main/
 logo:
   link: /
-  image: ./images/ripple-open-source-logo.svg
+  srcSet: "./images/xrpl-evm-black.svg light, ./images/xrpl-evm-white.svg dark"
   altText: XRPL EVM Documentation
 navigation:
   nextButton:

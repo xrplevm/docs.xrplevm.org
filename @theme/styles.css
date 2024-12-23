@@ -1,0 +1,24 @@
+[data-component-name="Layout/DocumentationLayout"] {
+  background-image: url("../images/bg-top.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+
+[data-component-name="layouts/RootLayout"] {
+  background-image: url("../images/bg-bottom.png");
+  background-position: right bottom;
+  background-repeat:  no-repeat;
+  background-size: 150px;
+}
+
+[data-component-name="Footer/Footer"] {
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+}
+
+[data-component-name="Navbar/NavbarMenu"] {
+  justify-content: center;
+}
+
+
