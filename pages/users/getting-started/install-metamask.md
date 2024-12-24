@@ -17,7 +17,7 @@ To begin, download and install the MetaMask extension for your browser:
 1. Visit [metamask.io](https://metamask.io/download/).
 2. Select your preferred browser (Chrome, Firefox, Brave, or Edge) and follow the installation instructions.
 
-<Insert Screenshot of the MetaMask Download Page>
+![Download MetaMask](../images/downloadMetaMask.png)
 
 Once installed, a MetaMask icon will appear in your browser's toolbar.
 
@@ -29,15 +29,15 @@ Follow these steps to create a new MetaMask wallet:
 
 1. Click the MetaMask icon in your browser.
 2. Click **"Create a Wallet."**
-3. Secure your wallet:
+3. Set a password and click **"Create."**
+4. Secure your wallet:
    - Save the **seed phrase** provided by MetaMask in a safe location. This is the only way to recover your wallet if you lose access to it.
    - **Never share your seed phrase with anyone.**
-   <Insert Screenshot Showing the Seed Phrase and Warning>
-4. Set a password and click **"Create."**
+   ![Back Up MetaMask Mnemonic](../images/backupmnemonic.png)
 
 Your MetaMask wallet is now ready to use.
 
-<Insert Screenshot of the Wallet Interface after Creation>
+![Created MetaMask Account](../images/createdMetaMask.png)
 
 ---
 
@@ -51,7 +51,7 @@ If you already have an XRPL EVM-compatible account, you can import it into MetaM
 
 Your existing account will now be accessible in MetaMask.
 
-<Insert Screenshot of Import Account Screen>
+![Import Account MetaMask](../images/importaccount.png)
 
 ---
 

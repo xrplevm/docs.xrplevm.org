@@ -1,16 +1,16 @@
-# Connect MetaMask to the XRPL EVM Sidechain
+# Connect MetaMask to the XRPL EVM
 
 ## Attention
 
 The XRPL EVM-compatible sidechain implementation is a **proof of concept** extension to the XRP Ledger protocol and is intended for development purposes only. It is currently connected to the **XRPL Devnet** and not the production mainnet. **Do not send transactions in Mainnet.**
 
-This guide will walk you through configuring MetaMask to connect to the XRPL EVM Sidechain.
+This guide will walk you through configuring MetaMask to connect to the XRPL EVM.
 
 ---
 
-## 1. Adding XRPL EVM Sidechain to MetaMask
+## 1. Adding XRPL EVM to MetaMask
 
-To interact with the XRPL EVM Sidechain, you need to manually add it as a custom network in MetaMask.
+To interact with the XRPL EVM, you need to manually add it as a custom network in MetaMask.
 
 1. **Open MetaMask**:
    - Click the MetaMask icon in your browser to open the wallet.
@@ -19,37 +19,35 @@ To interact with the XRPL EVM Sidechain, you need to manually add it as a custom
    - In the MetaMask interface, click the network dropdown at the top (default is "Ethereum Mainnet").
    - Select **"Add Network."**
 
-   <Insert Screenshot of Network Dropdown>
+   ![Add Network to MetaMask](../images/addNetwork.png)
 
 3. **Enter Network Details**:
    - Fill in the following information:
-     - **Network Name:** XRPL EVM Sidechain Devnet
+     - **Network Name:** XRPL EVM Devnet
      - **New RPC URL:** [http://rpc.xrplevm.org/](http://rpc.xrplevm.org/)
      - **Chain ID:** 1440002
      - **Currency Symbol:** XRP
      - **Block Explorer URL:** [https://explorer.xrplevm.org](https://explorer.xrplevm.org)
 
-   <Insert Screenshot of Add Network Form>
+   ![Add Network MetaMask Form](../images/addNetworkForm.png)
 
 4. **Save Network**:
-   - Click **"Save."** The XRPL EVM Sidechain will now be available in the network dropdown.
+   - Click **"Save."** The XRPL EVM will now be available in the network dropdown.
 
 5. **Switch Networks**:
-   - Select "XRPL EVM Sidechain Devnet" from the network dropdown to start interacting with the network.
+   - Select "XRPL EVM Devnet" from the network dropdown to start interacting with the network.
 
-   <Insert Screenshot of Selected Network>
+   ![Select XRPL EVM Network](../images/selectXRPLEVM.png)
 
 ---
 
 ## 2. Verifying the Connection
 
-To ensure that MetaMask is properly connected to the XRPL EVM Sidechain:
+To ensure that MetaMask is properly connected to the XRPL EVM:
 
-1. Open MetaMask and confirm that "XRPL EVM Sidechain Devnet" is displayed as the active network.
+1. Open MetaMask and confirm that "XRPL EVM Devnet" is displayed as the active network.
 2. Click **"Account Details"** to view your wallet address.
 3. Verify that the balance and token details appear correctly (if you have already received test tokens).
-
-<Insert Screenshot of Connected Wallet on XRPL EVM>
 
 ---
 
