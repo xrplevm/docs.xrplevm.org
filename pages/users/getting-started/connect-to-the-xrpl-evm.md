@@ -62,4 +62,4 @@ To ensure that MetaMask is properly connected to the XRPL EVM:
 - **Transaction Fees:**
   Current transaction fees are around 4¢, but future adjustments aim to reduce this to approximately 1¢.
 
-If you encounter any issues, ensure that the RPC URL, Chain ID, and other network details are entered correctly. For further assistance, refer to the XRPL EVM documentation or support channels.
+If you encounter any issues, ensure that the RPC URL, Chain ID, and other network details are entered correctly. For further assistance, refer to the XRPL EVM documentation or [support channels](https://discord.gg/xrplevm).
