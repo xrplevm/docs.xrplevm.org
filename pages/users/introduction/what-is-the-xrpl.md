@@ -4,27 +4,27 @@ The **XRP Ledger (XRPL)** is a decentralized, open-source blockchain designed fo
 
 ## Key Features of the XRPL
 
-### 1. **Speed and Efficiency**
+### 1. Speed and Efficiency
 
 - **Fast Transactions:** Transactions settle in just 3-5 seconds, ensuring near-instant finality.
 - **Low Fees:** Transaction fees are minimal, averaging less than a cent, making it ideal for high-frequency and micro-transactions.
 - **Energy Efficiency:** Unlike Proof-of-Work (PoW) blockchains like Bitcoin and Ethereum, XRPL uses a consensus algorithm that consumes minimal energy.
 
-### 2. **Built-in Decentralized Exchange (DEX)**
+### 2. Built-in Decentralized Exchange (DEX)
 
 The XRPL has a native decentralized exchange that enables:
 
 - **Atomic Swaps:** Seamless exchange of assets without requiring intermediaries.
 - **Token Issuance:** Developers and users can issue custom tokens directly on the ledger.
 
-### 3. **Cross-Border Payments**
+### 3. Cross-Border Payments
 
 Designed for global transactions, XRPL reduces reliance on traditional banking systems by facilitating real-time cross-border payments with:
 
 - **No Intermediaries:** Transactions occur directly between parties.
 - **Multi-Currency Support:** Convert between fiat and digital currencies seamlessly.
 
-### 4. **Developer-Friendly Ecosystem**
+### 4. Developer-Friendly Ecosystem
 
 - **Comprehensive Documentation:** XRPL provides extensive resources and APIs for developers to build applications.
 - **Interoperability:** XRPL supports multiple programming languages, making it accessible for developers worldwide.
@@ -37,26 +37,26 @@ The combination of **XRPL** and the **XRPL Ethereum Virtual Machine (EVM)** side
 
 ### Benefits of the XRPL and XRPL EVM Combo
 
-#### 1. **Performance Meets Programmability**
+#### 1. Performance Meets Programmability
 
 - **XRPL Strengths:** Leverages the speed, low fees, and decentralized infrastructure of XRPL for foundational blockchain services.
 - **EVM Compatibility:** Adds Ethereum-compatible smart contracts to XRPL, allowing developers to deploy Solidity-based dApps while benefiting from XRPL's efficiency.
 
 **Example:** A DeFi application on XRPL EVM can execute trades and settle payments faster and cheaper than on Ethereum, thanks to XRPL's underlying architecture.
 
-#### 2. **Cross-Chain Interoperability**
+#### 2. Cross-Chain Interoperability
 
 The XRPL EVM utilizes the **Axelar network** to bridge assets and messages between XRPL, XRPL EVM, and other blockchains. This enables:
 
 - **Asset Portability:** Move assets seamlessly between ecosystems.
 - **dApp Interactions:** Interact with dApps across multiple blockchains, increasing utility and adoption.
 
-#### 3. **Developer Accessibility**
+#### 3. Developer Accessibility
 
 - Developers familiar with Ethereum tools like MetaMask, Truffle, and Remix can easily transition to XRPL EVM.
 - XRPL's robust APIs simplify integration for custom applications.
 
-#### 4. **Enhanced Use Cases**
+#### 4. Enhanced Use Cases
 
 The XRPL and XRPL EVM combination is particularly suited for:
 
@@ -64,7 +64,7 @@ The XRPL and XRPL EVM combination is particularly suited for:
 - **Tokenized Assets:** Issue, manage, and trade tokenized assets on XRPL while enabling programmable logic (e.g., lending, staking) via XRPL EVM.
 - **NFT Marketplaces:** Utilize XRPL's scalability and XRPL EVM's Ethereum compatibility to build efficient, cross-chain NFT marketplaces.
 
-#### 5. **Cost Advantage**
+#### 5. Cost Advantage
 
 - Ethereum's high gas fees have limited accessibility for smaller-scale users and developers.
 - By leveraging XRPL's low fees and combining them with EVM smart contracts, the XRPL EVM offers a significantly more affordable alternative for deploying and interacting with dApps.

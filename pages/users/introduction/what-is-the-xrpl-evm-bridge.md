@@ -4,7 +4,7 @@ The **XRPL EVM Bridge** serves as a critical component enabling interoperability
 
 ## Key Features of the XRPL EVM Bridge
 
-### 1. **Interoperability Across Chains**
+### 1. Interoperability Across Chains
 
 The XRPL EVM Bridge facilitates seamless communication between the XRPL's high-speed and low-cost native blockchain and the programmability of the XRPL EVM Sidechain. This unlocks:
 
@@ -12,7 +12,7 @@ The XRPL EVM Bridge facilitates seamless communication between the XRPL's high-s
 - **Smart Contract Interactions:** Interact with EVM-compatible dApps using XRPL assets.
 - **Cross-Chain Liquidity:** Enable liquidity flows between chains for DeFi and other decentralized applications.
 
-### 2. **Axelar Integration**
+### 2. Axelar Integration
 
 Axelar, a decentralized cross-chain communication protocol, powers the XRPL EVM Bridge to provide enhanced security, scalability, and functionality. This ensures:
 
@@ -45,19 +45,19 @@ The Axelar-powered bridge replaces the initial XLS38d bridge. Here's an overview
 
 ## Benefits of the Axelar Bridge
 
-### 1. **Interchain dApp Development**
+### 1. Interchain dApp Development
 Axelar’s General Message Passing (GMP) enables the creation of interchain dApps, expanding functionalities across blockchains. Examples include:
 
 - **Cross-Chain DeFi:** A lending protocol on XRPL EVM Sidechain can accept collateral from other blockchains.
 - **NFT Marketplaces:** Build marketplaces that span XRPL, XRPL EVM, and Ethereum.
 
-### 2. **Scalability and Flexibility**
+### 2. Scalability and Flexibility
 Axelar’s infrastructure supports scalable operations, enabling:
 
 - Token transfers between XRPL and XRPL EVM.
 - Smart contract calls across chains with transactional consistency.
 
-### 3. **Secure Cross-Chain Communication**
+### 3. Secure Cross-Chain Communication
 Axelar’s proof-of-stake (PoS) validators ensure message security and integrity across chains. This reduces risks associated with bridge vulnerabilities.
 
 ---
@@ -74,7 +74,7 @@ Axelar’s proof-of-stake (PoS) validators ensure message security and integrity
 
 Here’s an example of how to use Axelar’s General Message Passing (GMP) to bridge XRP from XRPL to XRPL EVM:
 
-### 1. **Initiate a Payment Transaction on XRPL:**
+### 1. Initiate a Payment Transaction on XRPL:
    - Submit a transaction specifying the destination address and payload (e.g., smart contract call data).
    ```json
    {
@@ -93,10 +93,10 @@ Here’s an example of how to use Axelar’s General Message Passing (GMP) to br
    }
    ```
 
-### 2. **Verification and Execution:**
+### 2. Verification and Execution:
    - Axelar’s validators process the transaction and relay it to the XRPL EVM Sidechain Gateway.
 
-### 3. **Smart Contract Execution on XRPL EVM:**
+### 3. Smart Contract Execution on XRPL EVM:
    - Call the `execute` function on the Axelar Gateway smart contract to complete the transfer.
 
 ---
