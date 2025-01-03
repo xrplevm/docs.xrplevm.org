@@ -33,7 +33,7 @@ import { Wallet, Client, Payment, convertStringToHex } from "xrpl";
 // wallet variable corresponds to xrpl.js Wallet instance
 // client variable corresponds to xrpl.js Client instance
 
-// 1. Create the payment transaction object
+// Create the payment transaction object
 const payment: Payment = {
     TransactionType: "Payment",
     Account: wallet.address, // sender's address
@@ -66,13 +66,13 @@ const payment: Payment = {
     ]
 }
 
-// 2. Autofill transaction
+// Autofill transaction
 const transaction = await client.autofill(payment);
 
-// 3. Sign transaction
+// Sign transaction
 const signedTransaction = wallet.sign(transaction).tx_blob;
 
-// 4. Submit transaction
+// Submit transaction
 const result = await client.submit(signedTransaction);
 ```
 
@@ -92,7 +92,7 @@ import { Wallet, Client, Payment, convertStringToHex } from "xrpl";
 // wallet variable corresponds to xrpl.js Wallet instance
 // client variable corresponds to xrpl.js Client instance
 
-// 1. Create the payment transaction object
+// Create the payment transaction object
 const payment: Payment = {
     TransactionType: "Payment",
     Account: wallet.address, // sender's address
@@ -129,13 +129,13 @@ const payment: Payment = {
     ]
 }
 
-// 2. Autofill transaction
+// Autofill transaction
 const transaction = await client.autofill(payment);
 
-// 3. Sign transaction
+// Sign transaction
 const signedTransaction = wallet.sign(transaction).tx_blob;
 
-// 4. Submit transaction
+// Submit transaction
 const result = await client.submit(signedTransaction);
 ```
 
@@ -157,6 +157,7 @@ import { Contract } from "ehters";
 
 // The signer initialization is omitted for brevity
 
+// Instantiate the ITS contract
 const its = new Contract(
     "0x43F2ccD4E27099b5F580895b44eAcC866e5F7Bb1", // The ITS address in the XRPL EVM
     ITS_ABI, // ABI for the ITS contract
@@ -173,6 +174,7 @@ The example bellow shows how to send 100 XRP from the XRPL EVM to the XRP Ledger
 ```ts
 import ethers from "ethers";
 
+// Call the interchainTransfer method
 await its.interchainTransfer(
     "0xc2bb311dd03a93be4b74d3b4ab8612241c4dd1fd0232467c54a03b064f8583b6", // XRP token ID
     "xrpl", // Destination chain ID
@@ -200,6 +202,7 @@ import { Wallet, Client, TrustSet } from "xrpl";
 // wallet variable corresponds to xrpl.js Wallet instance
 // client variable corresponds to xrpl.js Client instance
 
+// Create the trust set transaction object
 const trustSet: TrustSet = {
     TransactionType: "TrustSet",
     Account: wallet.address,
@@ -209,6 +212,15 @@ const trustSet: TrustSet = {
         value: "100", // Any value >= the amount to be transferred
     },
 }
+
+// Autofill transaction
+const transaction = await client.autofill(trustSet);
+
+// Sign transaction
+const signedTransaction = wallet.sign(transaction).tx_blob;
+
+// Submit transaction
+const result = await client.submit(signedTransaction);
 ```
 
 Next, the sender must call the [`approve`](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/4c3ef87cf57b448a0b5fc68b8ce6604a31b60814/contracts/token/ERC20/ERC20.sol#L127) method on the ERC20 contract to allow the ITS contract to transfer the tokens:
@@ -218,12 +230,14 @@ import { Contract } from "ehters";
 
 // The signer initialization is omitted for brevity
 
+// Instantiate the ERC20 contract
 const erc20 = new Contract(
     "0x20937978F265DC0C947AA8e136472CFA994FE1eD", // RLUSD ERC20 token address
     ERC20_ABI, // ABI for the ERC20 contract
     signer
 );
 
+// Call the approve method
 await erc20.approve(
     "0x43F2ccD4E27099b5F580895b44eAcC866e5F7Bb1", // ITS address in the XRPL EVM
     "100000000000000000000", // Any value >= the amount to be transferred as an integer
@@ -233,6 +247,9 @@ await erc20.approve(
 Finally, use the [`interchainTransfer`](https://github.com/axelarnetwork/interchain-token-service/blob/9edc4318ac1c17231e65886eea72c0f55469d7e5/contracts/interfaces/IInterchainTokenStandard.sol#L19) method on the ITS contract to send the tokens:
 
 ```ts
+import ethers from "ethers";
+
+// Call the interchainTransfer method
 await its.interchainTransfer(
     "0x85f75bb7fd0753565c1d2cb59bd881970b52c6f06f3472769ba7b48621cd9d23", // RLUSD token ID
     "xrpl", // Destination chain ID
