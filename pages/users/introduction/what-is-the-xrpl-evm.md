@@ -1,6 +1,7 @@
 # What is the XRPL EVM
 
-The **XRPL Ethereum Virtual Machine (EVM) Sidechain** is an innovative blockchain ecosystem that extends the capabilities of the XRP Ledger (XRPL) by introducing Ethereum Virtual Machine compatibility. This enables developers to build and deploy Solidity-based smart contracts on the XRPL ecosystem, combining the cost-efficiency and speed of XRPL with the programmability of Ethereum.
+The **XRPL Ethereum Virtual Machine (EVM)** is a transformative extension of the XRP Ledger ecosystem that introduces Ethereum’s smart contract capabilities through a dedicated sidechain. Built on the Cosmos SDK, this sidechain leverages a Proof-of-Authority (PoA) consensus model to maintain high performance and low latency while preserving the core attributes of the XRP Ledger. It connects to the XRP Ledger via the Axelar network, using XRP bridged from the XRPL as its native currency, facilitating seamless asset transfers and communication between the XRPL and the EVM sidechain. This integration fuses the XRP Ledger’s proven speed, cost-efficiency, and security with Ethereum’s versatility, empowering developers to build and deploy Solidity-based smart contracts in a high-speed, low-cost, and liquidity-rich environment.
+
 
 ## Key Features of the XRPL EVM
 
@@ -36,8 +37,6 @@ The XRPL EVM bridges the gap between two powerful blockchain ecosystems: the XRP
 
 The XRPL's low transaction fees reduce the cost of deploying and interacting with smart contracts, making it an attractive choice for developers and startups building decentralized applications (dApps).
 
-**Example:** A decentralized exchange (DEX) can be deployed on XRPL EVM with lower operational costs compared to Ethereum or Binance Smart Chain.
-
 ### 2. Global Payments Meets Programmability
 
 The XRPL is known for its robust global payment infrastructure. Adding EVM compatibility enables developers to programmatically manage those payments through smart contracts, enabling:
@@ -66,19 +65,21 @@ With Axelar and the XRPL EVM bridge, assets can move seamlessly between the XRPL
 
 ## Current Status
 
-The XRPL EVM is currently in its **Devnet stage**, with a **Testnet launch planned for the second half of January**. This phased rollout ensures thorough testing and validation before the mainnet deployment.
+The XRPL EVM is currently in its **Devnet stage**, with a **Testnet launch planned for Q1 2025**. This phased rollout ensures thorough testing and validation before the mainnet deployment.
 
 ### Recent Updates:
 
 - **Chain Upgrades:** Improved network stability and performance with the latest Cosmos SDK and Evmos updates.
 - **Explorer Enhancements:** Upgrades to both Cosmos and EVM explorers for better network visibility.
 - **Validator Onboarding:** Efforts to decentralize the network further by adding high-quality validators from diverse geographies.
-- **Transaction Fee Optimization:** Plans to adjust fees to remain competitive with networks like Binance and Polygon (~1¢ per transaction).
 
 ---
 
-## A Game-Changer for Blockchain Innovation
-
-The XRPL EVM is more than just an extension of the XRP Ledger—it’s a leap forward in blockchain technology. By merging XRPL's fast, low-cost, and energy-efficient infrastructure with Ethereum's smart contract capabilities, the XRPL EVM provides a unique platform for developers and users to explore new use cases and opportunities.
-
-Whether you're building dApps, tokenizing assets, or exploring DeFi, the XRPL EVM offers the tools and ecosystem to make your vision a reality.
+### XRPL EVM Sidechain Resources
+- Explorer: [explorer.xrplevm.org](https://explorer.xrplevm.org)
+- Bridge: [bridge.xrplevm.org](http://bridge.xrplevm.org/)
+- Governance: [governance.xrplevm.org](http://governance.xrplevm.org/)
+- RPC: [rpc.xrplevm.org](http://rpc.xrplevm.org/)
+- Web Socket: [ws.xrplevm.org](http://ws.xrplevm.org/)
+- Gnosis Safe: [safe.xrplevm.org](http://safe.xrplevm.org/)
+- Discord: [discord.gg/xrplevm](http://discord.gg/xrplevm)
