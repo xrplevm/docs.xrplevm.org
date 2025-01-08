@@ -10,14 +10,14 @@ For practical guidance on using ITS to send and receive tokens, refer to the gui
 
 ## Sending assets from XRP Ledger to XRPL EVM
 
-Sending assets from the XRP Ledger to the XRPL EVM or other chains is straightforward. The process involves executing a standard payment transaction, specifying the following key parameters: [`Amount`](https://js.xrpl.org/interfaces/Payment.html#Amount), [`Destination`](https://js.xrpl.org/interfaces/Payment.html#Destination) and [`Memos`](https://js.xrpl.org/interfaces/Payment.html#Memos).
+Sending assets from the XRP Ledger to the XRPL EVM or other chains is straightforward. The process involves executing a standard payment transaction, specifying the following key parameters:
 
-* `Amount`: Specifies the quantity of the asset to be transferred. The format and value depend on the type of asset being sent (e.g., XRP or IOUs).
-* `Destination`: Refers to the Interchain Token Service address on the XRP Ledger.
-* `Memos`: Contains additional data required for the transfer, including:
-  * The destination chain ID on the Axelar network.
-  * The recipient's address on the destination chain.
-  * A payload hash, which is only relevant for [GMP messages](https://docs.axelar.dev/dev/general-message-passing/overview/) and ignored in token transfers.
+* [`Amount`](https://js.xrpl.org/interfaces/Payment.html#Amount): Specifies the quantity of the asset to be transferred. The format and value depend on the type of asset being sent (e.g., XRP or IOUs).
+* [`Destination`](https://js.xrpl.org/interfaces/Payment.html#Destination): Refers to the Interchain Token Service address on the XRP Ledger.
+* [`Memos`](https://js.xrpl.org/interfaces/Payment.html#Memos): Contains additional data required for the transfer, including:
+  * The **destination chain ID** on the Axelar network.
+  * The **recipient's address** on the destination chain.
+  * A **payload hash**, which is only relevant for [GMP messages](https://docs.axelar.dev/dev/general-message-passing/overview/) and ignored in token transfers.
   
 **Important**: All fields within [`Memos`](https://js.xrpl.org/interfaces/Payment.html#Memos) must be encoded in hexadecimal format before submission.
 
@@ -36,7 +36,7 @@ import { Wallet, Client, Payment, convertStringToHex } from "xrpl";
 // Create the payment transaction object
 const payment: Payment = {
     TransactionType: "Payment",
-    Account: wallet.address, // sender's address
+    Account: wallet.address, // Sender's address
     Amount: "100000000", // 100 XRP in drops
     Destination: "rP9iHnCmJcVPtzCwYJjU1fryC2pEcVqDHv", // ITS address in the XRP Ledger
     Memos: [
@@ -44,7 +44,7 @@ const payment: Payment = {
             Memo: {
                 // hex(destination_address)
                 MemoType: "64657374696E6174696F6E5F61646472657373",
-                // Destination address is already hexadecimal since it is an EVM address (removing the 0x prefix)
+                // Destination contract address (hexadecimal, without 0x prefix)
                 MemoData: "9159C650E1D7E10A17C450EB3D50778ABA593D61",
             },
         },
@@ -52,6 +52,7 @@ const payment: Payment = {
             Memo: {
                 // hex(destination_chain)
                 MemoType: "64657374696E6174696F6E5F636861696E",
+                // The destination chain ID on the Axelar network (hexadecimal)
                 MemoData: convertStringToHex("xrpl-evm-sidechain"),
             },
         },
@@ -95,7 +96,7 @@ import { Wallet, Client, Payment, convertStringToHex } from "xrpl";
 // Create the payment transaction object
 const payment: Payment = {
     TransactionType: "Payment",
-    Account: wallet.address, // sender's address
+    Account: wallet.address, // Sender's address
     Amount: {
         currency: "524C555344000000000000000000000000000000", // RLUSD (non-standard currency code)
         Issuer: "rMxCKbEDwqr76QuheSUMdEGf4B9xJ8m5De", // RLUSD issuer address
@@ -107,7 +108,7 @@ const payment: Payment = {
             Memo: {
                 // hex(destination_address)
                 MemoType: "64657374696E6174696F6E5F61646472657373",
-                // Destination address is already hexadecimal since it is an EVM address (removing the 0x prefix)
+                // Destination contract address (hexadecimal, without 0x prefix)
                 MemoData: "9159C650E1D7E10A17C450EB3D50778ABA593D61",
             },
         },
@@ -115,6 +116,7 @@ const payment: Payment = {
             Memo: {
                 // hex(destination_chain)
                 MemoType: "64657374696E6174696F6E5F636861696E",
+                // The destination chain ID on the Axelar network(hexadecimal)
                 MemoData: convertStringToHex("xrpl-evm-sidechain"),
             },
         },
