@@ -16,7 +16,7 @@ Before interacting with a smart contract, ensure you have the following set up:
    - Connect your wallet to the XRPL EVM Devnet using MetaMask or other compatible tools. 
    - Network details:
      - **RPC URL**: [https://rpc.xrplevm.org](https://rpc.xrplevm.org)
-     - **Chain ID**: `1440001`
+     - **Chain ID**: `1440002`
 
 3. **Smart Contract ABI**:
    - The Application Binary Interface (ABI) is required to interact with the contract. You can find the ABI in your contract's build files or Remix IDE.
