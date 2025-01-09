@@ -79,7 +79,7 @@ The XRPL EVM is currently in its **Devnet stage**, with a **Testnet launch plann
 - Explorer: [explorer.xrplevm.org](https://explorer.xrplevm.org)
 - Bridge: [bridge.xrplevm.org](http://bridge.xrplevm.org/)
 - Governance: [governance.xrplevm.org](http://governance.xrplevm.org/)
-- RPC: [rpc.xrplevm.org](http://rpc.xrplevm.org/)
+- RPC: [rpc.xrplevm.org](https://rpc.xrplevm.org/)
 - Web Socket: [ws.xrplevm.org](http://ws.xrplevm.org/)
 - Gnosis Safe: [safe.xrplevm.org](http://safe.xrplevm.org/)
 - Discord: [discord.gg/xrplevm](http://discord.gg/xrplevm)

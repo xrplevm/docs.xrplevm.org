@@ -15,7 +15,7 @@ Before interacting with a smart contract, ensure you have the following set up:
 2. **XRPL EVM Network**:
    - Connect your wallet to the XRPL EVM Devnet using MetaMask or other compatible tools. 
    - Network details:
-     - **RPC URL**: [http://rpc.xrplevm.org](http://rpc.xrplevm.org)
+     - **RPC URL**: [https://rpc.xrplevm.org](https://rpc.xrplevm.org)
      - **Chain ID**: `1440001`
 
 3. **Smart Contract ABI**:
@@ -61,7 +61,7 @@ The **web3.js** library provides a programmatic way to interact with smart contr
 2. **Connect to XRPL EVM**:
    ```javascript
    const Web3 = require('web3');
-   const web3 = new Web3('http://rpc.xrplevm.org');
+   const web3 = new Web3('https://rpc.xrplevm.org');
    ```
 
 3. **Load the Contract**:
@@ -98,7 +98,7 @@ The **ethers.js** library is another popular option for interacting with smart c
 2. **Connect to XRPL EVM**:
    ```javascript
    const { ethers } = require('ethers');
-   const provider = new ethers.providers.JsonRpcProvider('http://rpc.xrplevm.org');
+   const provider = new ethers.providers.JsonRpcProvider('https://rpc.xrplevm.org');
    const wallet = new ethers.Wallet('0xYourPrivateKey', provider);
    ```
 

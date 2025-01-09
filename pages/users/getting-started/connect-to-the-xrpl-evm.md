@@ -24,7 +24,7 @@ To interact with the XRPL EVM, you need to manually add it as a custom network i
 3. **Enter Network Details**:
    - Fill in the following information:
      - **Network Name:** XRPL EVM Devnet
-     - **New RPC URL:** [http://rpc.xrplevm.org/](http://rpc.xrplevm.org/)
+     - **New RPC URL:** [https://rpc.xrplevm.org/](https://rpc.xrplevm.org/)
      - **Chain ID:** 1440002
      - **Currency Symbol:** XRP
      - **Block Explorer URL:** [https://explorer.xrplevm.org](https://explorer.xrplevm.org)
