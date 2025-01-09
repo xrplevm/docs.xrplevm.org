@@ -1,41 +1,62 @@
+
 # Introduction
 
-The **XRPL Ethereum Virtual Machine (EVM) sidechain** is a groundbreaking blockchain ecosystem that extends the capabilities of the XRP Ledger by integrating programmability and smart contract functionality. This empowers developers to utilize XRPL's speed and cost-efficiency alongside the XRPL Sidechain Ethereum Virtual Machine's (EVM) extensive programmability, harnessed via Solidity smart contracts.
+To access the full functionality of the **XRPL Ethereum Virtual Machine (EVM)**, you will need an account and a balance of **XRP** to cover transaction fees. This section will guide you through the steps to set up your wallet, obtain XRP, and interact with the XRPL EVM.
 
-## Key Features of XRPL EVM
+---
 
-- **Low Fees:** Transaction costs are significantly lower compared to Ethereum and other EVM chains, making it highly cost-effective.
-- **Fast Transactions:** With block finalization times of just under 4 seconds, users and developers experience near-instant transaction processing.
-- **Cross-Chain Interoperability:** The Axelar network and XRPL bridge enable seamless asset transfers between XRPL and other blockchain ecosystems.
-- **Development-Focused Environment:** Currently in the Devnet stage, the XRPL EVM will soon transition to a Testnet environment, paving the way for broader testing and eventual mainnet deployment.
+## Getting Started with XRPL EVM
 
-## Tech Stack
+### 1. Create a Wallet
+To interact with the XRPL EVM, you need a compatible Ethereum wallet such as **MetaMask**. This wallet will serve as your gateway to manage accounts, sign transactions, and deploy smart contracts on the XRPL EVM.
 
-The XRPL EVM leverages a robust technological foundation:
+- Learn how to [Install MetaMask](./install-metamask.md).
+- Connect your wallet to the XRPL EVM by following the [Connect MetaMask to the XRPL EVM](./connect-to-the-xrpl-evm.md) guide.
 
-- **Cosmos SDK:** Provides a modular framework for building the blockchain, offering high performance and flexibility.
-- **Evmos:** Brings Ethereum compatibility to the Cosmos ecosystem, allowing the deployment of EVM-compatible smart contracts while benefiting from Cosmos's scalable and efficiencient consensus layer.
-- **CometBFT (Tendermint):** Ensures (BFT) Byzantine fault tolerance and high throughput, making the network resilient and performant.
+---
 
-## Interacting with Smart Contracts
+### 2. Obtain XRP for Transaction Fees
+Every action on the XRPL EVM, such as deploying smart contracts or transferring tokens, requires a small amount of **XRP** to cover transaction fees. There are two ways to get XRP for the XRPL EVM Devnet:
 
-One unique feature of XRPL EVM is the ability to interact with smart contracts directly from the XRPL Mainnet using **Axelar General Message Passing (GMP)**. This functionality allows users and developers to initiate smart contract executions on the XRPL EVM from the native XRPL, bridging the gap between the two ecosystems and enabling cross-chain dApp functionalities.
+1. **Use the Faucet**:
+   The XRPL EVM Faucet allows you to request free test XRP for development purposes.  
+   *(Read more: [Faucet](../faucet.md))*
 
-## Current Status and Updates
+2. **Bridge XRP from the XRPL**:
+   Transfer XRP from the XRP Ledger to the XRPL EVM using the **Bridge**.  
+   *(Read more: [Using the Bridge](../using-the-bridge.md))*
 
-The XRPL EVM is in its **Devnet stage** but is rapidly progressing towards a **Testnet launch** planned for the second half of January. Key technical and operational milestones include:
+---
 
-- **Chain Upgrades:** Recent upgrades to v4 and v5 have brought the latest versions of the Cosmos SDK and Evmos, resolving validator sync issues and enhancing network stability.
-- **Explorer Enhancements:** Both Cosmos and EVM explorers are being updated to improve functionality and provide better insights into network activity.
-- **Validator Onboarding:** Efforts are underway to add high-quality validators to ensure geographic decentralization and robust network infrastructure.
-- **Network Parameters:** Ongoing adjustments to transaction fees aim to maintain competitive pricing against networks like Binance and Polygon.
+### 3. Start Building and Exploring
+Once your wallet is set up and funded with XRP, you’re ready to explore the XRPL EVM’s functionalities:
 
-## Heads-Up for New Users
+- **Deploy Smart Contracts**: Use tools like Remix IDE or Hardhat to deploy Solidity-based smart contracts.  
+  *(Read more: [Deploy a Smart Contract](../../developers/developing-smart-contracts/deploy-the-smart-contract.md))*
 
-For users new to blockchain technology or the XRPL EVM ecosystem, here are some important considerations:
+- **Interact with Smart Contracts**: Use libraries like `ethers.js` or `web3.js` to interact with deployed contracts programmatically.  
+  *(Read more: [Interact with a Smart Contract](../../developers/developing-smart-contracts/interact-with-the-smart-contract.md))*
 
-- **Development Environment:** The current network is in devnet stage and intended for development purposes only.
-- **Future-Proofing:** The Devnet will be archived for minimal usage, with a new Testnet becoming the primary testing environment.
-- **Transaction Fees:** While current fees are around 4¢ per transaction, future adjustments will bring them closer to 1¢, aligning with competitive networks and XRPL ethos.
+- **Experiment with Cross-Chain Functionality**: Leverage Axelar General Message Passing (GMP) for interoperable applications across multiple chains.
 
-This introduction highlights the innovative approach of XRPL EVM to bridge the gap between XRPL and Ethereum-like ecosystems. It combines the best of both worlds, ensuring a seamless, cost-effective, and developer-friendly blockchain environment.
+---
+
+## Table of Contents
+
+### Introduction
+1. [What is the XRPL?](../introduction/what-is-the-xrpl.md)
+2. [What is the XRPL EVM?](../introduction/what-is-the-xrpl-evm.md)
+3. [What is the XRPL EVM Bridge?](../introduction/what-is-the-xrpl-evm-bridge.md)
+
+### Getting Started
+1. [Install MetaMask](../getting-started/install-metamask.md)
+2. [Connect to XRPL EVM](../getting-started/connect-to-the-xrpl-evm.md)
+3. [Connect MetaMask to the XRPL EVM](../getting-started/connect-to-the-xrpl-evm.md)
+
+### Usage
+1. [Using the Bridge](../using-the-bridge.md)
+2. [Faucet](../faucet.md)
+
+---
+
+Explore these resources and start building with the XRPL EVM. Whether you're a developer or a blockchain user, this documentation will help you make the most of XRPL EVM’s features. Let’s get started!

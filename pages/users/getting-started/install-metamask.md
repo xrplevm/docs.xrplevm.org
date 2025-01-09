@@ -1,12 +1,6 @@
 # Install MetaMask
 
-MetaMask is a browser extension and wallet for accessing decentralized applications (dApps) on EVM-compatible chains. It allows users to interact with blockchain networks directly from their browser, making it an essential tool for interacting with the XRPL EVM sidechain.
-
-## Attention
-
-The XRPL EVM-compatible sidechain implementation is a **proof of concept** extension to the XRP Ledger protocol and is intended for development purposes only. It is currently connected to the **XRPL Devnet** and not the production mainnet. **Do not send transactions in Mainnet.**
-
-This guide explains how to install MetaMask. For configuring it for XRPL EVM, refer to the "Connect MetaMask to the XRPL EVM Sidechain" guide.
+This guide explains how to install MetaMask. For configuring it for XRPL EVM, refer to the [Connect MetaMask to the XRPL EVM Sidechain](../getting-started/connect-to-the-xrpl-evm.md) guide.
 
 ---
 
@@ -55,10 +49,17 @@ Your existing account will now be accessible in MetaMask.
 
 ---
 
-## Notes for Developers
+## What's Next?
 
-MetaMask injects the XRPL EVM sidechain Web3 API into every website's JavaScript context. This allows dApps to interact seamlessly with the XRPL EVM blockchain.
+Now that you’ve successfully installed and set up MetaMask, you’re ready to connect it to the **XRPL EVM**. This will allow you to interact with the network, deploy smart contracts, and manage assets.
 
-If you encounter any issues, ensure that you are on the latest version of MetaMask. Additionally, remember that this is a **Devnet environment**, so it should only be used for testing and development purposes.
+### Continue to the Next Guide:
+- **[Connect MetaMask to the XRPL EVM Sidechain](../getting-started/connect-to-the-xrpl-evm.md)**: Learn how to configure MetaMask to connect to the XRPL EVM and start using its features.
 
-For configuring MetaMask to connect to XRPL EVM, see the "Connect MetaMask to the XRPL EVM Sidechain" documentation.
+### Additional Resources:
+- **MetaMask Security Tips**:
+  - Always back up your seed phrase in a secure location.
+  - Be cautious when interacting with unknown websites or dApps.
+  - Regularly check your connected sites in MetaMask and revoke access when not in use.
+
+By following these steps, you’re now equipped with the tools to start your journey with the XRPL EVM. Let’s move forward and unlock the full potential of this innovative blockchain ecosystem!

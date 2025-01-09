@@ -24,9 +24,6 @@ To develop, deploy, and interact with smart contracts on the XRPL EVM, you’ll 
    - **Hardhat** for advanced project management and automation.
 3. **Wallet:**
    - **MetaMask** to interact with the XRPL EVM network.
-4. **AI Tools (2025-Ready):**
-   - Use AI-powered tools like GitHub Copilot or ChatGPT to assist with Solidity code generation, testing, and debugging.
-
 ---
 
 ## Development Workflow
@@ -66,24 +63,13 @@ A decentralized exchange (DEX) on the XRPL EVM could interact with liquidity poo
 
 ---
 
-## The Role of AI in Smart Contract Development
-
-In 2025, AI tools have become indispensable for developers. Use AI to:
-
-- **Write Smarter Code:** Tools like ChatGPT can generate Solidity boilerplate code and suggest improvements.
-- **Debug Efficiently:** Identify vulnerabilities and optimize performance with AI-driven analysis.
-- **Automate Testing:** Automate unit tests and fuzz testing to ensure your contract is robust and secure.
-- **Enhance Productivity:** Spend less time troubleshooting and more time building innovative solutions.
-
----
-
 ## Next Steps
 
 With the foundational knowledge and tools outlined here, you’re ready to:
 
-1. **Write Your First Contract:** Start small with basic contracts like token creation or a simple voting system.
-2. **Explore Cross-Chain Opportunities:** Dive into Axelar GMP and Cosmos IBC for next-gen decentralized applications.
-3. **Contribute to the XRPL EVM Ecosystem:** Share your contracts, tools, and ideas with the growing XRPL EVM developer community.
+1. **Write Your First Contract:** [Start](./deploy-the-smart-contract.md) small with basic contracts like token creation or a simple voting system.
+2. **Explore Cross-Chain Opportunities:** Dive into [Axelar GMP](../../bridge/general-message-passing.md) and [Cosmos IBC](../interacting-with-cosmos/using-ibc.md) for next-gen decentralized applications.
+3. **Contribute to the XRPL EVM Ecosystem:** [Share](https://discord.gg/xrplevm) your contracts, tools, and ideas with the growing XRPL EVM developer community.
 
 Check out the following guides to continue your journey:
 
