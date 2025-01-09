@@ -31,16 +31,16 @@ Through the previous pages, you’ve learned to:
 Take your skills to the next level by exploring advanced use cases and emerging technologies:
 
 1. **Cross-Chain Applications**:
-   - Learn how to utilize Axelar General Message Passing (GMP) and Cosmos IBC to create interoperable dApps that interact across multiple blockchains.
+   - Learn how to utilize [Axelar General Message Passing (GMP)](../../bridge/general-message-passing.md) and [Cosmos IBC](../interacting-with-cosmos/using-ibc.md) to create interoperable dApps that interact across multiple blockchains.
 
 2. **Token Standards**:
-   - Dive into token standards like ERC-20 (fungible tokens) and ERC-721 (non-fungible tokens) to design and implement custom tokens on the XRPL EVM.
+   - Dive into token standards like [ERC-20](https://docs.openzeppelin.com/contracts/4.x/erc20) (fungible tokens) and [ERC-721](https://docs.openzeppelin.com/contracts/4.x/erc721) (non-fungible tokens) to design and implement custom tokens on the XRPL EVM.
 
 3. **DeFi Protocols**:
-   - Explore decentralized finance (DeFi) concepts such as lending, staking, and automated market makers (AMMs) to build innovative financial solutions.
+   - Explore decentralized finance (DeFi) concepts such as lending, staking, and automated market makers (AMMs) to [build](https://soliditylang.org/) innovative financial solutions.
 
 4. **AI-Driven Smart Contracts**:
-   - Integrate AI tools to automate contract testing, optimize gas usage, and generate dynamic smart contract logic.
+   - Integrate AI tools to automate [contract testing](https://ethereum.org/en/developers/docs/smart-contracts/testing/), optimize gas usage, and generate dynamic smart contract logic.
 
 ---
 
