@@ -1,14 +1,8 @@
 # Connect MetaMask to the XRPL EVM
 
-## Attention
-
-The XRPL EVM-compatible sidechain implementation is a **proof of concept** extension to the XRP Ledger protocol and is intended for development purposes only. It is currently connected to the **XRPL Devnet** and not the production mainnet. **Do not send transactions in Mainnet.**
-
 This guide will walk you through configuring MetaMask to connect to the XRPL EVM.
 
----
-
-## 1. Adding XRPL EVM to MetaMask
+## Adding XRPL EVM to MetaMask
 
 To interact with the XRPL EVM, you need to manually add it as a custom network in MetaMask.
 
@@ -41,25 +35,12 @@ To interact with the XRPL EVM, you need to manually add it as a custom network i
 
 ---
 
-## 2. Verifying the Connection
+## Verify the Connection
 
 To ensure that MetaMask is properly connected to the XRPL EVM:
 
 1. Open MetaMask and confirm that "XRPL EVM Devnet" is displayed as the active network.
 2. Click **"Account Details"** to view your wallet address.
 3. Verify that the balance and token details appear correctly (if you have already received test tokens).
-
----
-
-## Notes for Testing and Development
-
-- **Devnet Environment Only:**
-  The XRPL EVM Sidechain is still in its Devnet phase. Use it exclusively for testing and development purposes.
-
-- **Future Updates:**
-  The Testnet launch is planned for the second half of January, which will offer a more stable environment for broader testing.
-
-- **Transaction Fees:**
-  Current transaction fees are around 4¢, but future adjustments aim to reduce this to approximately 1¢.
 
 If you encounter any issues, ensure that the RPC URL, Chain ID, and other network details are entered correctly. For further assistance, refer to the XRPL EVM documentation or [support channels](https://discord.gg/xrplevm).

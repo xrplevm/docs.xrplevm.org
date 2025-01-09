@@ -4,7 +4,7 @@ This guide explains how to install MetaMask. For configuring it for XRPL EVM, re
 
 ---
 
-## 1. Installing MetaMask
+## Install MetaMask
 
 To begin, download and install the MetaMask extension for your browser:
 
@@ -17,7 +17,7 @@ Once installed, a MetaMask icon will appear in your browser's toolbar.
 
 ---
 
-## 2. Create an Account on MetaMask
+## Create an Account on MetaMask
 
 Follow these steps to create a new MetaMask wallet:
 
@@ -35,7 +35,7 @@ Your MetaMask wallet is now ready to use.
 
 ---
 
-## 3. Import an Existing Account (Optional)
+## Import an Existing Account (Optional)
 
 If you already have an XRPL EVM-compatible account, you can import it into MetaMask using its private key:
 

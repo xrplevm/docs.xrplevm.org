@@ -4,21 +4,24 @@ Welcome to the **XRPL EVM documentation**! Here you will find everything you nee
 
 ---
 
-## Table of Contents
+## Introduction
+[What is the XRPL?](./introduction/what-is-the-xrpl.md)
 
-### Introduction
-1. [What is the XRPL?](./introduction/what-is-the-xrpl.md)
-2. [What is the XRPL EVM?](./introduction/what-is-the-xrpl-evm.md)
-3. [What is the XRPL EVM Bridge?](./introduction/what-is-the-xrpl-evm-bridge.md)
+[What is the XRPL EVM?](./introduction/what-is-the-xrpl-evm.md)
 
-### Getting Started
-1. [Install MetaMask](./getting-started/install-metamask.md)
-2. [Connect to XRPL EVM](./getting-started/connect-to-the-xrpl-evm.md)
-3. [Connect MetaMask to the XRPL EVM](./getting-started/connect-to-the-xrpl-evm.md)
+[What is the XRPL EVM Bridge?](./introduction/what-is-the-xrpl-evm-bridge.md)
 
-### Usage
-1. [Using the Bridge](./using-the-bridge.md)
-2. [Faucet](./faucet.md)
+## Getting Started
+[Install MetaMask](./getting-started/install-metamask.md)
+
+[Connect to XRPL EVM](./getting-started/connect-to-the-xrpl-evm.md)
+
+[Connect MetaMask to the XRPL EVM](./getting-started/connect-to-the-xrpl-evm.md)
+
+## Usage
+[Using the Bridge](./using-the-bridge.md)
+
+[Faucet](./faucet.md)
 
 ---
 

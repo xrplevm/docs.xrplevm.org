@@ -7,7 +7,7 @@ To access the full functionality of the **XRPL Ethereum Virtual Machine (EVM)**,
 
 ## Getting Started with XRPL EVM
 
-### 1. Create a Wallet
+### Create a Wallet
 To interact with the XRPL EVM, you need a compatible Ethereum wallet such as **MetaMask**. This wallet will serve as your gateway to manage accounts, sign transactions, and deploy smart contracts on the XRPL EVM.
 
 - Learn how to [Install MetaMask](./install-metamask.md).
@@ -15,7 +15,7 @@ To interact with the XRPL EVM, you need a compatible Ethereum wallet such as **M
 
 ---
 
-### 2. Obtain XRP for Transaction Fees
+### Obtain XRP for Transaction Fees
 Every action on the XRPL EVM, such as deploying smart contracts or transferring tokens, requires a small amount of **XRP** to cover transaction fees. There are two ways to get XRP for the XRPL EVM Devnet:
 
 1. **Use the Faucet**:
@@ -28,7 +28,7 @@ Every action on the XRPL EVM, such as deploying smart contracts or transferring 
 
 ---
 
-### 3. Start Building and Exploring
+### Start Building and Exploring
 Once your wallet is set up and funded with XRP, you’re ready to explore the XRPL EVM’s functionalities:
 
 - **Deploy Smart Contracts**: Use tools like Remix IDE or Hardhat to deploy Solidity-based smart contracts.  
@@ -38,24 +38,6 @@ Once your wallet is set up and funded with XRP, you’re ready to explore the XR
   *(Read more: [Interact with a Smart Contract](../../developers/developing-smart-contracts/interact-with-the-smart-contract.md))*
 
 - **Experiment with Cross-Chain Functionality**: Leverage Axelar General Message Passing (GMP) for interoperable applications across multiple chains.
-
----
-
-## Table of Contents
-
-### Introduction
-1. [What is the XRPL?](../introduction/what-is-the-xrpl.md)
-2. [What is the XRPL EVM?](../introduction/what-is-the-xrpl-evm.md)
-3. [What is the XRPL EVM Bridge?](../introduction/what-is-the-xrpl-evm-bridge.md)
-
-### Getting Started
-1. [Install MetaMask](../getting-started/install-metamask.md)
-2. [Connect to XRPL EVM](../getting-started/connect-to-the-xrpl-evm.md)
-3. [Connect MetaMask to the XRPL EVM](../getting-started/connect-to-the-xrpl-evm.md)
-
-### Usage
-1. [Using the Bridge](../using-the-bridge.md)
-2. [Faucet](../faucet.md)
 
 ---
 

@@ -1,10 +1,10 @@
 # What is the XRPL EVM bridge
 
-The **XRPL EVM Bridge** serves as a critical component enabling interoperability between the XRP Ledger (XRPL) and the XRPL Ethereum Virtual Machine (EVM) Sidechain. It allows users to transfer assets, initiate smart contract interactions, and leverage decentralized applications across these two ecosystems. The initial implementation, based on the XLS38d amendment, was developed on XRPL Devnet but has been replaced in favor of Axelar's advanced bridging solution, which is currently under development.
+The **XRPL EVM Bridge** serves as a critical component enabling interoperability between the XRP Ledger (XRPL) and the XRPL Ethereum Virtual Machine (EVM) Sidechain. It allows users to transfer assets, initiate smart contract interactions, and leverage decentralized applications across these two ecosystems.
 
 ## Key Features of the XRPL EVM Bridge
 
-### 1. Interoperability Across Chains
+### Interoperability Across Chains
 
 The XRPL EVM Bridge facilitates seamless communication between the XRPL's high-speed and low-cost native blockchain and the programmability of the XRPL EVM Sidechain. This unlocks:
 
@@ -12,7 +12,7 @@ The XRPL EVM Bridge facilitates seamless communication between the XRPL's high-s
 - **Smart Contract Interactions:** Interact with EVM-compatible dApps using XRPL assets.
 - **Cross-Chain Liquidity:** Enable liquidity flows between chains for DeFi and other decentralized applications.
 
-### 2. Axelar Integration
+### Axelar Integration
 
 Axelar, a decentralized cross-chain communication protocol, powers the XRPL EVM Bridge to provide enhanced security, scalability, and functionality. This ensures:
 
@@ -24,7 +24,7 @@ Axelar, a decentralized cross-chain communication protocol, powers the XRPL EVM 
 
 ## How the Axelar-Powered Bridge Works
 
-The Axelar-powered bridge replaces the initial XLS38d bridge. Here's an overview of its operation:
+The Axelar-powered bridge works as follows:
 
 1. **Asset Transfer Initiation:**
    - A transaction is initiated on the XRPL specifying the amount, destination chain, and recipient address.
@@ -45,13 +45,13 @@ The Axelar-powered bridge replaces the initial XLS38d bridge. Here's an overview
 
 ## Benefits of the Axelar Bridge
 
-### 1. Interchain dApp Development
+### Interchain dApp Development
 Axelar’s General Message Passing (GMP) enables the creation of interchain dApps, expanding functionalities across blockchains. Examples include:
 
 - **Cross-Chain DeFi:** A lending protocol on XRPL EVM Sidechain can accept collateral from other blockchains.
 - **NFT Marketplaces:** Build marketplaces that span XRPL, XRPL EVM, and Ethereum.
 
-### 2. Scalability and Flexibility
+### Scalability and Flexibility
 Axelar’s infrastructure supports scalable operations, enabling:
 
 - Token transfers between XRPL and XRPL EVM.
