@@ -53,7 +53,7 @@ Once you have acquired $XRP through the faucet or the XLS38d bridge, you are rea
 
 - **Getting Started with MetaMask:** Learn how to connect your wallet to the XRPL EVM network.
 - **Using the Bridge:** Step-by-step instructions for transferring assets between XRPL and the XRPL EVM Sidechain.
-- **XRPL EVM Explorer:** View transaction details and network activity at [explorer.xrplevm.org](https://explorer.xrplevm.org).
+- **XRPL EVM Explorer:** View transaction details and network activity at [https://explorer.xrplevm.org](https://explorer.xrplevm.org).
 
 Leverage the XRPL EVM’s speed, low transaction costs, and Ethereum compatibility to create innovative decentralized applications (dApps).
 
