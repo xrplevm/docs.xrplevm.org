@@ -15,5 +15,5 @@ For XRPL EVM Sidechain Devnet and XRPL Devnet, the relaying process for XRP tran
 
 Here you will find two guides, one for each chain, to help you with the relaying process:
 
-- [XRPL EVM Sidechain to XRPL](/docs/evm-sidechain/axelar-relay-transfer-xrpl-evm-sidechain-to-xrpl.md)
-- [XRPL to XRPL EVM Sidechain](/docs/evm-sidechain/axelar-relay-transfer-xrpl-to-xrpl-evm-sidechain.md)
+- [XRPL EVM Sidechain to XRPL](./relay-transfer-xrpl-evm-sidechain-to-xrpl.md)
+- [XRPL to XRPL EVM Sidechain](./relay-transfer-xrpl-to-xrpl-evm-sidechain.md)

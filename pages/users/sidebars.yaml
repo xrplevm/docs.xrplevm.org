@@ -11,8 +11,10 @@
     - page: ./getting-started/introduction.md
     - page: ./getting-started/install-metamask.md
     - page: ./getting-started/connect-to-the-xrpl-evm.md
+- page: ./using-the-bridge.md
+- page: ./faucet.md
 - group: Tools
-  expanded: true
+  expanded: false
   items:
     - href: https://explorer.xrplevm.org
       label: Explorer
@@ -23,5 +25,3 @@
     - href: https://safe.xrplevm.org
       label: Gnosis Safe
       external: true
-- page: ./using-the-bridge.md
-- page: ./faucet.md
