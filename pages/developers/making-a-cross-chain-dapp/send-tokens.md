@@ -23,7 +23,7 @@ Sending assets from the XRP Ledger to the XRPL EVM or other chains is straightfo
 
 ### Sending XRP from XRP Ledger to XRPL EVM
 
-To send XRP - the native token of the XRPL Ledger and XRPL EVM - to the XRPL EVM, the payment must specify the [`Amount`](https://js.xrpl.org/interfaces/Payment.html#Amount) as the number of XRP in drops to be transferred to the other chain. This process is similar to an in-chain payment on the XRPL.
+To send XRP - the native token of the XRPL Ledger and XRPL EVM - to the XRPL EVM, the payment must specify the [`Amount`](https://js.xrpl.org/interfaces/Payment.html#Amount) as the number of XRP in drops to be transferred to the other chain. This process is similar to an on-chain payment on the XRPL.
 
 The example bellow shows how to send 100 XRP from the XRPL to the XRPL EVM.
 
@@ -155,7 +155,7 @@ Sending assets from the XRPL EVM to the XRP Ledger is achieved by calling the [`
 Before performing a transfer, you need to instantiate the [ITS contract](https://docs.axelar.dev/dev/send-tokens/interchain-tokens/intro/) using the [ethers library](https://docs.ethers.org/v6/). The example below demonstrates how to create an instance of the ITS contract.
 
 ```ts
-import { Contract } from "ehters";
+import { Contract } from "ethers";
 
 // The signer initialization is omitted for brevity
 
@@ -228,7 +228,7 @@ const result = await client.submit(signedTransaction);
 Next, the sender must call the [`approve`](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/4c3ef87cf57b448a0b5fc68b8ce6604a31b60814/contracts/token/ERC20/ERC20.sol#L127) method on the ERC20 contract to allow the ITS contract to transfer the tokens:
 
 ```ts
-import { Contract } from "ehters";
+import { Contract } from "ethers";
 
 // The signer initialization is omitted for brevity
 
