@@ -37,8 +37,8 @@ The **XRPL EVM Explorer** supports multiple verification methods. For detailed a
    - Click **Compile**.
 
 3. Export the compiler details:
-   - Scroll down to **Compiler Details** and click **Generate Standard JSON Input**.
-   - Save the generated JSON file to your local machine.
+   - Scroll down to **Compilation Details** and copy **COMPILER INPUT**.
+   - Create a .json file on your local machine and paste the **COMPILER INPUT**.
 
 ### Upload JSON Input to XRPL EVM Explorer
 
