@@ -51,87 +51,28 @@ To quickly get started, node operators can choose to sync by downloading a snaps
 
 ### Download the latest snapshot
 
-Node Operators can decide how much of historical state they want to preserve by choosing between `Pruned`, `Default`, and `Archive`. See the [Snapshots page](../resources/snapshots.md) for up-to-date snapshot sizes.
-
-###### Default
-
-```bash=
-sudo apt-get install wget liblz4-tool aria2 jq -y
-
-export URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmoshub-4-default")|.url'`
-
-echo $URL
-
-cd $HOME/.gaia
-
-aria2c -x5 $URL
-```
-
-###### Pruned
-
-```bash=
-sudo apt-get install wget liblz4-tool aria2 jq -y
-
-export URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmoshub-4-pruned")|.url'`
-
-echo $URL
-
-cd $HOME/.gaia
-
-aria2c -x5 $URL
-```
-
-###### Archive
-
-```bash=
-sudo apt-get install wget liblz4-tool aria2 jq -y
-
-export URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmoshub-4-archive")|.url'`
-
-echo $URL
-
-cd $HOME/.gaia
-
-aria2c -x5 $URL
-```
-
-**The download logs should look like the following**
-
-```
-01/11 07:48:17 [NOTICE] Downloading 1 item(s)
-[#7cca5a 484MiB/271GiB(0%) CN:5 DL:108MiB ETA:42m41s]
-```
-
-**Completed Download Process:**
-
-```
-[#7cca5a 271GiB/271GiB(99%) CN:1 DL:77MiB]
-01/11 08:32:19 [NOTICE] Download complete: /mnt/quicksync_01/cosmoshub-4-pruned.20220111.0310.tar.lz4
-
-Download Results:
-gid   |stat|avg speed  |path/URI
-======+====+===========+=======================================================
-7cca5a|OK  |   105MiB/s|/mnt/quicksync_01/cosmoshub-4-pruned.20220111.0310.tar.lz4
-
-Status Legend:
-(OK):download completed.
-```
-
-##### Unzip
+Node Operators can decide how much of historical state they want to preserve by choosing between `Pruned`, `Default`, and `Archive`. See the [Snapshots page](../resources/snapshots.md) for up-to-date snapshot sizes. 
+In this example we are going to use Peersyst pruned snapshot.
 
 ```bash
-lz4 -c -d `basename $URL` | tar xf -
+sudo apt-get install wget lz4 -y
+
+cd $HOME/.exrpd
+
+wget https://evm-sidechain-snapshots-devnet.s3.amazonaws.com/exrpd.tar.lz4
+
+tar -xI lz4 -f exrpd.tar.lz4
 ```
 
-##### Copy Address Book Quicksync
+##### Start the node
 
 ```bash
-curl https://quicksync.io/addrbook.cosmos.json > $HOME/.gaia/config/addrbook.json
-```
-
-##### Start Gaia
-
-```bash
-gaiad start --x-crisis-skip-assert-invariants
+exrpd start
 
 ```
+
+After your node has started, you can track its synchronization status by examining the logs. To learn more, explore the following resources:
+
+- [Interacting With the node CLI](../guides/interacting-with-the-node-cli.md) — understand how to interact with and manage your node.
+- [Upgrading your node](../guides/upgrading-your-node.md) — learn how to upgrade your node to the latest version.
+- [Node configuration options](../advanced/node-configuration-options.md) — discover configuration options for fine-tuning your node’s.  

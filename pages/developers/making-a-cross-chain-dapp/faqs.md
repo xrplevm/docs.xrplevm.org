@@ -71,7 +71,7 @@ The steps involved in a cross-chain transaction are as follows:
 Additional Info:
 
 - [General Message Passing](https://docs.axelar.dev/dev/general-message-passing/overview)
-- [Relaying messages manually](../evm-sidechain/axelar-manually-relay-messages.md)
+- [Relaying messages](./send-messages.md)
 
 
 ## What portion of the cross-chain app should developers deploy on the XRPL, and what should they deploy on the XRPL EVM sidechain?
@@ -99,7 +99,7 @@ From our current testing, an end-to-end transaction can take more than a minute.
 
 ## What is the best way to start building? What tools are available?
 
-- A working XRPL testnet and Axelar Devnet integration can be found [here](../evm-sidechain/axelar-overview.md).
+- A working XRPL testnet and Axelar Devnet integration can be found [here](../../bridge/index.md).
 - Axelar documentation can be found [here](https://docs.axelar.dev/).
 - Axelar SDK details can be found [here](https://www.npmjs.com/package/@axelar-network/axelarjs-sdk).
-- XRPL Axelar integration details can be found [here](../evm-sidechain/axelar-general-message-passing.md).
+- XRPL Axelar integration details can be found [here](../../bridge/general-message-passing.md).

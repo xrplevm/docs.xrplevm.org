@@ -13,7 +13,6 @@
     - page: ./making-a-cross-chain-dapp/introduction.md
     - page: ./making-a-cross-chain-dapp/send-messages.md
     - page: ./making-a-cross-chain-dapp/send-tokens.md
-    - page: ./making-a-cross-chain-dapp/next-steps.md
     - page: ./making-a-cross-chain-dapp/faqs.md
 - group: Interacting with Cosmos
   expanded: false
@@ -22,10 +21,10 @@
     - page: ./interacting-with-cosmos/using-the-api.md
     - page: ./interacting-with-cosmos/address-translation.md
     - page: ./interacting-with-cosmos/using-ibc.md
-- group: Advanced Guides
-  expanded: false
-  items:
-    - page: ./advanced-guides/using-a-precompile.md
+# - group: Advanced Guides
+#   expanded: false
+#   items:
+#     - page: ./advanced-guides/using-a-precompile.md
 - group: Resources
   expanded: false
   items:
