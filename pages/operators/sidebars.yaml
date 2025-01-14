@@ -1,0 +1,28 @@
+- page: ./index.md
+- group: Getting started
+  items:
+    - page: ./getting-started/system-requirements.md
+    - page: ./getting-started/installing-the-node.md
+    - page: ./getting-started/join-the-devnet.md
+- group: Guides
+  items:
+    - page: ./guides/interacting-with-the-node-cli.md
+    - page: ./guides/upgrading-your-node.md
+- group: Validators
+  items:
+    - page: ./validators/join-the-proof-of-authority.md
+    - page: ./validators/managing-keys.md
+    - page: ./validators/maintaining-the-validator.md
+    - page: ./validators/validator-security.md
+- group: Advanced
+  items:
+    - page: ./advanced/node-configuration-options.md
+    - page: ./advanced/sync-options.md
+    # - page: ./advanced/monitoring-the-node.md
+    - page: ./advanced/adding-horocrux.md
+- group: Resources
+  page: ./resources/index.md
+  items:
+    - page: ./resources/configuration-reference.md
+    - page: ./resources/networks.md
+    - page: ./resources/snapshots.md

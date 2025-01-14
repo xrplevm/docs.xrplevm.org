@@ -1,0 +1,21 @@
+- page: index.md
+- page: ./technical-architecture.md
+- group: Concepts
+  items:
+    - page: ./concepts/cosmos-sdk.md
+    - page: ./concepts/evmos.md
+    - page: ./concepts/ibc.md
+    - page: ./concepts/accounts.md
+    - page: ./concepts/transactions.md
+- group: Modules
+  page: ./modules/index.md
+  items:
+    - page: ./modules/poa.md
+    - page: ./modules/module-accounts.md
+- page: ./precompiles.md
+- group: Security
+  page: ./security/index.md
+  items:
+    - page: ./security/security-audits.md
+    - page: ./security/bugs.md
+

@@ -1,0 +1,27 @@
+- page: ./index.md
+- group: Introduction
+  expanded: true
+  items:
+      - page: ./introduction/what-is-the-xrpl.md
+      - page: ./introduction/what-is-the-xrpl-evm.md
+      - page: ./introduction/what-is-the-xrpl-evm-bridge.md
+- group: Getting Started
+  expanded: true
+  items:
+    - page: ./getting-started/introduction.md
+    - page: ./getting-started/install-metamask.md
+    - page: ./getting-started/connect-to-the-xrpl-evm.md
+- page: ./using-the-bridge.md
+- page: ./faucet.md
+- group: Tools
+  expanded: false
+  items:
+    - href: https://explorer.xrplevm.org
+      label: Explorer
+      external: true
+    - href: https://governance.xrplevm.org
+      label: Governance Explorer
+      external: true
+    - href: https://safe.xrplevm.org
+      label: Gnosis Safe
+      external: true

@@ -6,10 +6,29 @@ ignore:
   - _*
 links:
   - rel: stylesheet
-    href: ./static/style.css
-  - rel: stylesheet
-    href: ./static/fonts.css
-navbar: {}
+    href: ./@theme/fonts.css
+navbar:
+  items:
+    - label: Users
+      page: pages/users/index.md
+      linkedSidebars:
+        - pages/users/sidebars.yaml
+    - label: Developers
+      page: pages/developers/index.md
+      linkedSidebars:
+        - pages/developers/sidebars.yaml
+    - label: Operators
+      page: pages/operators/index.md
+      linkedSidebars:
+        - pages/operators/sidebars.yaml
+    - label: Bridge
+      page: pages/bridge/index.md
+      linkedSidebars:
+        - pages/bridge/sidebars.yaml
+    # - label: Core
+    #   page: pages/core/index.md
+    #   linkedSidebars:
+    #     - pages/core/sidebars.yaml
 footer:
   items:
     - group: About
@@ -30,7 +49,7 @@ footer:
           external: true
     - label: © 2013 - 2023 Ripple, All Rights Reserved.
 search:
-  hide: true
+  hide: false
 analytics:
   ga:
     trackingId: G-S1KBMRJYKS
@@ -46,7 +65,7 @@ markdown:
     baseUrl: https://github.com/ripple/docs.xrplevm.org/tree/main/
 logo:
   link: /
-  image: ./images/ripple-open-source-logo.svg
+  srcSet: "./images/xrpl-evm-black.svg light, ./images/xrpl-evm-white.svg dark"
   altText: XRPL EVM Documentation
 navigation:
   nextButton:
