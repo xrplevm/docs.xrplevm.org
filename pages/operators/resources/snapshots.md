@@ -5,7 +5,7 @@ Snapshots provide a quick way to bootstrap your node’s state by downloading a 
 ## Devnet Snapshots
 
 | Provider | URL                                                                                                | Type    |
-|----------|----------------------------------------------------------------------------------------------------|---------|
+| -------- | -------------------------------------------------------------------------------------------------- | ------- |
 | Ripple   | [Download](https://evm-sidechain-snapshots-devnet.s3.us-east-1.amazonaws.com/exrpd-pre-v5.tar.lz4) | Default |
 | Enigma   | [Download](https://enigma-validator.com/stake-with-us/xrp-testnet#services)                        | Pruned  |
 | Polkachu | [Download](https://polkachu.com/testnets/xrp/snapshots)                                            | Default |
